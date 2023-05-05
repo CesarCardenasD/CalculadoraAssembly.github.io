@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Calculadora</title>
     <!-- Bootstrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -31,6 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="#descripcion">Descripción</a></li>
                     <li class="nav-item"><a class="nav-link" href="#objetivos">Objetivos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#metodologia">Metodologia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#desarrollo">Desarrollo</a></li>
                 </ul>
             </div>
         </div>
@@ -40,7 +41,8 @@
         <div class="container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-8 align-self-end">
-                    <h1 class="text-white font-weight-bold">Diseño y Construccion de una Calculadora usando Assembly</h1>
+                    <h1 class="text-white font-weight-bold">Diseño y Construccion de una Calculadora usando Assembly
+                    </h1>
                     <hr class="divider" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
@@ -57,7 +59,8 @@
                 <div class="col-lg-8 text-center">
                     <h2 class="text-white mt-0">Descripción del Proyecto</h2>
                     <hr class="divider divider-light" />
-                    <p class="text-white-75 mb-4">El objetivo de este proyecto es diseñar y construir una calculadora funcional utilizando
+                    <p class="text-white-75 mb-4">El objetivo de este proyecto es diseñar y construir una calculadora
+                        funcional utilizando
                         assembly y un microcontrolador Arduino UNO. La calculadora debe ser capaz de tomar
                         datos de un teclado de membrana 4x4 y realizar operaciones matemáticas básicas como
                         suma, resta, multiplicación y división con estos para luego mostrar los resultados una
@@ -77,7 +80,8 @@
                     <div class="mt-5">
                         <div class="mb-2"><i class="bi-tools fs-1 text-primary"></i></div>
                         <h3 class="h4 mb-2">Diseño</h3>
-                        <p class="text-muted mb-0">Diseñar el circuito de la calculadora en un simulador (tinkercad) para luego
+                        <p class="text-muted mb-0">Diseñar el circuito de la calculadora en un simulador (tinkercad)
+                            para luego
                             armarlo usando elementos físicos: Arduino UNO, pantalla LCD y teclado de
                             membrana 4x4</p>
                     </div>
@@ -93,7 +97,8 @@
                     <div class="mt-5">
                         <div class="mb-2"><i class="bi-person fs-1 text-primary"></i></div>
                         <h3 class="h4 mb-2">Assembly</h3>
-                        <p class="text-muted mb-0">Escribir el código en Assembly para recibir y procesar las entradas mediante el
+                        <p class="text-muted mb-0">Escribir el código en Assembly para recibir y procesar las entradas
+                            mediante el
                             Arduino.</p>
                     </div>
                 </div>
@@ -107,7 +112,62 @@
             </div>
         </div>
     </section>
-    
+    <!-- metodologia-->
+    <section class="page-section bg-primary" id="metodologia">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">Metodologia</h2>
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4">Primero, realizaremos en la aplicación tinkercad el diseño de las
+                        conexiones necesarias para el funcionamiento correcto de la calculadora tomando en cuenta los
+                        requerimientos
+                        de cada módulo. Una vez hecho esto, compraremos los materiales para armar el circuito
+                        y con la ayuda de un archivo (programa .ino) comprobaremos que este bien antes de
+                        codificarlo en assembly.</p>
+                    <p class="text-white-75 mb-4">Después de esta prueba, programaremos en el lenguaje assembly todas
+                        las funciones
+                        necesarias para las operaciones aritméticas básicas como suma, resta, multiplicación y
+                        división; con este archivo listo, se escribirá un programa en el lenguaje C (lenguaje
+                        Arduino) que se encargue de invocar y controlar las funciones anteriormente descritas. </p>
+                    <p class="text-white-75 mb-4">Finalmente realizaremos pruebas y ajustes necesarios para asegurar el
+                        correcto
+                        funcionamiento de la calculadora.
+                    </p>
+                    <a class="btn btn-light btn-xl" href="#objetivos">¿Cúales son nuestros Objetivos?</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- desarrollo-->
+    <section class="page-section" id="desarrollo">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Desarrollo</h2>
+            <hr class="divider" />
+            <p class="text-muted mb-4">Arduino UNO es una placa electrónica que funciona como una plataforma de prototipado para
+                proyectos de electrónica y programación. Esta se encuentra equipada con un microcontrolador
+                ATmega328P y puede programarse mediante un IDE basado en C++. Con una variedad de pines
+                de entrada/salida y una interfaz USB, Arduino UNO es fácil de usar y permite a los usuarios
+                conectar sensores, actuadores y otros dispositivos electrónicos para crear proyectos interactivos y
+                automatizados. Para el presente proyecto los únicos módulos a utilizar serán un teclado matricial
+                y una pantalla LCD.</p>
+            <p class="text-muted mb-4">Un teclado matricial 4x4 es un dispositivo de entrada que permite a los usuarios ingresar datos
+                utilizando una matriz de 16 botones. Cada botón representa un valor numérico, alfanumérico o
+                de control, y se conecta a la placa Arduino UNO a través de 8 pines. </p>
+            <p class="text-muted mb-4">Por otro lado, una pantalla LCD con módulo I2C es un dispositivo de salida que muestra
+                información en texto y gráficos. El módulo I2C permite una comunicación serial de dos hilos
+                entre la pantalla y la placa Arduino UNO.
+            </p>
+            <p class="text-muted mb-4">Para una establecer una conexión efectiva y funcional se requiere la instalación de bibliotecas
+                desde el IDE de Arduino: LiquidCrystal_I2C, Keyboard.
+            </p>
+            <p class="text-muted mb-4">Se utilizó la aplicación Tinkercad, en donde se diseñó correctamente las conexiones y la
+                programación de los módulos para su correcto funcionamiento:
+            </p>
+            
+        </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
