@@ -42,9 +42,9 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Activate SimpleLightbox plugin for portfolio items
+    // Activate SimpleLightbox plugin for metodologia items
     new SimpleLightbox({
-        elements: '#portfolio a.portfolio-box'
+        elements: '#metodologia a.metodologia-box'
     });
 
 });
