@@ -202,7 +202,44 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
-                
+
+            </div>
+        </div>
+    </section>
+    <!-- problemas-->
+    <section class="page-section" id="problemas">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Problemas Encontrados</h2>
+            <hr class="divider" />
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="mt-5">
+
+                        <p class="text-muted mb-0">Las operaciones que se pueden realizar no pueden superar el entero
+                            255; esto se debe a, como se mencionó antes, Arduino funciona a partir de un microprocesador
+                            ATmega328P, que es un procesador nativo de 8 bits, por lo tanto, no se puede superar el
+                            umbral mencionado trabajando directamente con Assembly.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="mt-5">
+
+                        <p class="text-muted mb-0">Los registros en los que se guardan las entradas del usuario por
+                            teclado son muy específicos, al igual que los registros donde se almacenan los resultados
+                            con las operaciones. En este caso, se tuvo que buscar de manera minuciosa cuáles eran estos
+                            para acceder a su manejo. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="mt-5">
+
+                        <p class="text-muted mb-0">El manejo de los números negativos fue algo complicado. Las salidas
+                            no eran las esperadas, por ejemplo, si operábamos -2 + 1, el resultado se disparaba a 255,
+                            por la misma razón que se definió anteriormente. Por esto, se tuvo que manejar este tipo de
+                            casos desde el programa C++ realizando algunas comprobaciones con condicionales.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
