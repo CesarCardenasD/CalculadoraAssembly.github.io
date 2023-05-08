@@ -182,6 +182,37 @@
                 Assembly.</p>
             <p class="text-muted mb-4">Debido a lo anterior, el siguiente paso en este proyecto fue armar la
                 calculadora…</p>
+            <p class="text-muted mb-4">Para realizar el proyecto se usaron dos archivos. El archivo en C++ que se
+                encarga de armar los números y las operaciones que se ingresan de teclado, y presentar los resultados,
+                instrucciones y mensajes que se presentan al usuario por el LCD.</p>
+            <img src="./img/img1.jpeg" alt="Calculadora Tinkercad">
+            <p class="text-muted mb-4">Para poder usar el teclado de membrana 4x4, se debe crear una matriz e indicar
+                los puertos que se van a usar en la conexión del teclado con el Arduino</p>
+            <img src="./img/img2.jpg" alt="Calculadora Tinkercad">
+            <p class="text-muted mb-4">También se usa la biblioteca LiquidCrystal para acceder al LCD con su modulo I2C.
+            </p>
+            <img src="./img/img3.jpg" alt="Calculadora Tinkercad">
+            <p class="text-muted mb-4">En la función setup se presenta el titulo del programa, al igual que las
+                instrucciones de uso del programa. </p>
+            <img src="./img/img4.jpg" alt="Calculadora Tinkercad">
+            <p class="text-muted mb-4">En la funcion loop, se accede al teclado y se guarda en una variable la tecla que
+                se presionó. </p>
+            <img src="./img/img5.jpg" alt="Calculadora Tinkercad">
+            <p class="text-muted mb-4">Aquí se arma el primer número en base a lo que el usuario presione en el teclado.
+            </p>
+            <img src="./img/img6.jpg" alt="Calculadora Tinkercad">
+            <p class="text-muted mb-4">Si el usuario presiona una de las teclas que representan alguno de los signos, se
+                deja de armar el primer número, se guarda en otra variable el signo que el usuario quiere usar..</p>
+            <img src="./img/img7.jpg" alt="Calculadora Tinkercad">
+            <p class="text-muted mb-4">Se empieza a armar el segundo número. Al terminar de escribir el segundo número,
+                el usuario presiona la tecla D, lo que usa el signo guardado en la variable para determinar a cuál de
+                las funciones del Assembly se llama. Se llama a la función, dando como argumento los dos números y el
+                retorno se guarda en la variable numRes, el cual luego se presenta al usuario.</p>
+            <p class="text-muted mb-4">Si el usuario quiere usar el resultado como primer numero para otra operación, se
+                pasa el valor del resultado a la variable que guarda el primer número, y se reinician las demás
+                variables para volver a hacer la operación. Si el usuario presiona la tecla C, se reinician todas las
+                variables para volver a empezar con una operación nueva.</p>
+
             <a class="btn btn-primary btn-xl" href="#demo">Video Demo</a>
         </div>
     </section>
@@ -261,7 +292,7 @@
                         la placa Arduino, a la vez, de lo bien optimizadas que se encuentran sus bibliotecas que manejan
                         la enorme cantidad de módulos que existen, que van desde LEDS hasta kits de Machine Learning
                         (tinyML, i.e.).</p>
-                    
+
                 </div>
             </div>
         </div>
